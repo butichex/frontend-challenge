@@ -1,0 +1,61 @@
+.title {}
+
+
+.title-big {
+    font-style    : normal;
+    font-weight   : 800;
+    font-size     : rem(72);
+    line-height   : rem(80);
+    letter-spacing: -2px;
+
+}
+
+
+.subtitle {
+    font-style : normal;
+    font-weight: 400;
+    font-size  : rem(20);
+    line-height: 2rem;
+
+}
+
+
+
+.title-medium {
+    font-style    : normal;
+    font-weight   : 800;
+    font-size     : rem(56);
+    line-height   : rem(64);
+    letter-spacing: -1px;
+}
+
+
+.title-small {
+    font-style : normal;
+    font-weight: 800;
+    font-size  : rem(40);
+    line-height: 3rem;
+
+
+}
+
+.title-extra-small {
+    font-style : normal;
+    font-weight: 700;
+    font-size  : rem(24);
+    line-height: 2rem;
+}
+
+
+.desc {
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 1rem;
+    line-height: 2rem;
+    /* or 200% */
+
+
+    /* Text_Dark_Gray */
+
+    color: rgba(57, 20, 0, 0.64);
+}

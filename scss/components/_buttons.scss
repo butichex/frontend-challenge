@@ -1,0 +1,35 @@
+.button {
+    cursor       : pointer;
+    color        : white;
+    display      : inline-block;
+    font-style   : normal;
+    font-weight  : 600;
+    line-height  : 27px;
+    font-size    : rem(14);
+    padding      : 1em 2em;
+    border-radius: calc(6 / 16 * 1rem);
+
+}
+
+
+.button-outline {
+    border    : 1px solid rgba(255, 255, 255, 0.295743);
+    box-sizing: border-box;
+}
+
+
+.button-inline-red {
+    font-weight     : 900;
+    background-color: var(--accent-color);
+    color: white;
+
+}
+
+
+.button-inline-white {
+    font-weight     : 900;
+    background-color: white;
+    box-shadow      : 0px rem(3) rem(9) rgba(57, 20, 0, 0.08);
+    border-radius   : rem(6);
+    color: black;
+}

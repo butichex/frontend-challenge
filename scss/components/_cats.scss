@@ -1,0 +1,49 @@
+.cats {
+    padding: 3rem 0px 0px 0px;
+
+    &__inner {
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+        grid-gap             : 2rem;
+    }
+
+    &__cat {}
+
+    &__cat:hover {}
+
+}
+
+
+.cat {
+    position: relative;
+
+    &__like-button {
+        position: absolute;
+        bottom  : 1rem;
+        right   : 1rem;
+    }
+
+    &__like-button {
+        display: none;
+    }
+
+    &__like-button:hover {}
+
+
+    &__thumb {
+        transition: 0.75s;
+    }
+
+    &__thumb:hover {
+        transform : scale(1.1);
+    }
+
+
+    &__inner {
+        display : inline-block;
+        position: relative;
+    }
+
+
+    &:hover {}
+}

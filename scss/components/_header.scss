@@ -1,0 +1,52 @@
+.header {
+    z-index         : 10;
+    width           : 100%;
+    background-color: var(--accent-color);
+    height          : calc(var(--header-height) / 16 * 1rem);
+    position        : fixed;
+    left            : 0;
+    top             : 0;
+
+    &__inner {
+        position   : relative;
+        color      : white;
+        height     : 100%;
+        display    : flex;
+        align-items: center;
+    }
+
+
+    &__list {
+        display    : flex;
+        align-items: center;
+
+    }
+
+
+
+
+    &__item {
+        height     : calc(var(--header-height) / 16 * 1rem);
+        cursor     : pointer;
+        display    : inline-block;
+        padding    : 0px rem(24);
+        display    : flex;
+        align-items: center;
+        color      : var(--text-sub-color);
+        transition: all 1s ease;
+
+
+
+    }
+
+    &__item.--selected {
+        background-color: #1E88E5;
+        color           : var(--text-color);
+    }
+
+    &__item:hover {
+        color           : var(--text-color);
+
+    }
+
+}
