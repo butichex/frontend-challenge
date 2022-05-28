@@ -208,6 +208,31 @@ main {
   padding: calc(var(--header-height) / 16 * 1rem);
 }
 
+.loader {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .cats {
   padding: 3rem 0px 0px 0px;
 }
@@ -221,6 +246,7 @@ main {
 }
 
 .cat {
+  display: none;
   position: relative;
 }
 
@@ -235,6 +261,8 @@ main {
 }
 
 .cat__thumb {
+  width: 12.5rem;
+  height: 12.5rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
 }

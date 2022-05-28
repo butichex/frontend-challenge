@@ -15,6 +15,7 @@
 
 
 .cat {
+    display: none;
     position: relative;
 
     &__like-button {
@@ -31,6 +32,8 @@
 
 
     &__thumb {
+        width: rem(200);
+        height: rem(200);
         transition: 0.75s;
     }
 

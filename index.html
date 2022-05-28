@@ -15,8 +15,8 @@
         <div class="header__inner container">
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item --selected">Все котики</li>
-                    <li class="header__item">Любимые котики</li>
+                    <li id="js-all-cats" class="header__item --selected">Все котики</li>
+                    <li id="js-fav-cats" class="header__item">Любимые котики</li>
                 </ul>
                 </ul>
             </nav>
@@ -27,13 +27,19 @@
             <div class="cats__inner container">
                 <div class="cats__cat cat">
                     <div class="cat__inner">
-                        <img src="./img/image.png" alt="" class="cat__thumb">
+                        <img src="" alt="" class="cat__thumb">
                         <img src="./img/like.svg" alt="" class="cat__like-button">
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <div class="loader">
+        <p class="loader__text">
+            ... загружаем котиков ...
+        </p>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
