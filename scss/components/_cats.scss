@@ -15,38 +15,56 @@
 
 
 .cat {
-    display: none;
-    position: relative;
+    position  : relative;
+    transition: all 0.75s;
 
     &__like-button {
         position: absolute;
-        bottom  : 1rem;
-        right   : 1rem;
+        bottom  : 2rem;
+        right   : 2rem;
+        display : none;
+        cursor  : pointer;
+
     }
 
-    &__like-button {
-        display: none;
+    &__like-button.--clicked {
+        display: flex;
     }
 
     &__like-button:hover {}
 
 
     &__thumb {
-        width: rem(200);
-        height: rem(200);
-        transition: 0.75s;
+        width     : rem(200);
+        height    : rem(200);
+        transition: 0.3s;
     }
 
-    &__thumb:hover {
-        transform : scale(1.1);
-    }
+
+    &__thumb:hover {}
+
+
 
 
     &__inner {
-        display : inline-block;
-        position: relative;
+        display   : inline-block;
+        position  : relative;
+        transition: 0.3s;
     }
 
 
-    &:hover {}
+    &__inner:hover {
+        padding         : 0.5rem;
+        background-color: white;
+        filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(-3px 7px 4px rgba(0, 0, 0, 0.41));
+    }
+
+
+    &:hover {
+        .cat__like-button {
+            display: flex;
+        }
+    }
+
+
 }
