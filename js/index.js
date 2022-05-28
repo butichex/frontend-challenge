@@ -156,6 +156,7 @@ function TabsHandler(e) {
 
 
 function showAll() {
+    catsContainer.innerHTML = ""; 
     data = getCats();
     data.then((cats) => pasteCats(cats));
 }
