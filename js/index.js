@@ -75,7 +75,7 @@ function createCat(catData) {
     let cat = document.createElement("div"); cat.classList.add("cat"); cat.classList.add("cats__cat");
     let catInner = document.createElement("div"); catInner.classList.add("cat__inner");
     let catThumb = document.createElement("img"); catThumb.setAttribute("src", catData.url); catThumb.classList.add("cat__thumb")
-    let catLikeButton = document.createElement("img"); catLikeButton.setAttribute("src", "./img/like.svg"); catLikeButton.classList.add("cat__like-button");
+    let catLikeButton = document.createElement("img"); catLikeButton.setAttribute("src", "../img/like.svg"); catLikeButton.classList.add("cat__like-button");
     catLikeButton.setAttribute("id", catData.url.split("/")[4]);
     markActiveLike(catLikeButton);
 
@@ -145,7 +145,6 @@ function TabsHandler(e) {
         ableToScroll = true;
         favCatsTab.classList.toggle("--selected");
         allCatsTab.classList.toggle("--selected");
-
         showAll();
 
     }
