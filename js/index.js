@@ -49,14 +49,14 @@ function markUnactiveLike(e) {
 }
 
 function markActiveLike(e) {
-    e.onmouseover = () => (e.setAttribute("src", "../img/like-active.svg"))
-    e.onmouseout = () => (e.setAttribute("src", "../img/like.svg"))
+    e.onmouseover = () => (e.setAttribute("src", "/img/like-active.svg"))
+    e.onmouseout = () => (e.setAttribute("src", "./img/like.svg"))
     e.addEventListener("click", onLike);
 }
 
 function onLike(e) {
     localStorage.setItem(e.target.id, e.target.id);
-    e.target.setAttribute("src", "../img/like-active.svg")
+    e.target.setAttribute("src", "./img/like-active.svg")
     e.target.dataset.liked = true;
     markUnactiveLike(e);
 }
@@ -65,8 +65,8 @@ function onLike(e) {
 function onDislike(e) {
     localStorage.removeItem(e.target.id);
     catsContainer.removeChild(e.target.parentNode.parentNode);
-    e.onmouseover = () => (e.setAttribute("src", "../img/like-active.svg"));
-    e.onmouseout = () => (e.setAttribute("src", "../img/like.svg"));
+    e.onmouseover = () => (e.setAttribute("src", "./img/like-active.svg"));
+    e.onmouseout = () => (e.setAttribute("src", "./img/like.svg"));
 
 }
 
@@ -75,7 +75,7 @@ function createCat(catData) {
     let cat = document.createElement("div"); cat.classList.add("cat"); cat.classList.add("cats__cat");
     let catInner = document.createElement("div"); catInner.classList.add("cat__inner");
     let catThumb = document.createElement("img"); catThumb.setAttribute("src", catData.url); catThumb.classList.add("cat__thumb")
-    let catLikeButton = document.createElement("img"); catLikeButton.setAttribute("src", "../img/like.svg"); catLikeButton.classList.add("cat__like-button");
+    let catLikeButton = document.createElement("img"); catLikeButton.setAttribute("src", "./img/like.svg"); catLikeButton.classList.add("cat__like-button");
     catLikeButton.setAttribute("id", catData.url.split("/")[4]);
     markActiveLike(catLikeButton);
 
@@ -95,7 +95,7 @@ function showFavs() {
             let catLikeButton = cat.querySelector(".cat__like-button");
             catLikeButton.onmouseout = null;
             catLikeButton.onmouseover = null;
-            catLikeButton.setAttribute("src", "../img/like-active.svg");
+            catLikeButton.setAttribute("src", "./img/like-active.svg");
             catLikeButton.style.display = "flex";
             catLikeButton.addEventListener("click", onDislike);
             catsContainer.prepend(cat);
