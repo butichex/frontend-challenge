@@ -49,7 +49,7 @@ function markUnactiveLike(e) {
 }
 
 function markActiveLike(e) {
-    e.onmouseover = () => (e.setAttribute("src", "/img/like-active.svg"))
+    e.onmouseover = () => (e.setAttribute("src", "./img/like-active.svg"))
     e.onmouseout = () => (e.setAttribute("src", "./img/like.svg"))
     e.addEventListener("click", onLike);
 }
